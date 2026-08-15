@@ -1,0 +1,39 @@
+// Ported from legacy client/styles/components/_menu.scss — carousel-caption
+// and typewriter rules (header-nav rules moved to _header.scss).
+.carousel-caption {
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+.large-hero__title {
+  font-size: $m-size;
+}
+
+.large-hero__subtitle {
+  font-size: $s-size;
+}
+
+.typing-cursor {
+  border-right: 0.2rem solid #ddd;
+  animation: cursorBlink 0.8s infinite;
+}
+
+@keyframes cursorBlink {
+  from {
+    border-right: 0.2rem solid transparent;
+  }
+
+  to {
+    border-right: 0.2rem solid #ddd;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .large-hero__title {
+    font-size: $l-size;
+  }
+
+  .large-hero__subtitle {
+    font-size: $m-size;
+  }
+}

@@ -1,0 +1,75 @@
+@import './variables';
+@import './mixins';
+
+// --- Global / base rules -----------------------------------------------
+// Ported from legacy client/styles/base/_base.scss. Kept here since it's
+// truly global (not owned by any single component) and the architecture
+// doc's file layout doesn't carve out a separate base partial.
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $theme-red;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $black;
+  text-decoration: none;
+}
+
+// --- Shared section background modifiers --------------------------------
+// Ported from legacy client/styles/components/_section.scss. Used by
+// About and Skills sections.
+.page-section {
+  &--grey {
+    background-color: $bgGrey;
+  }
+
+  &--red {
+    background-color: $theme-red;
+    color: $offWhite;
+  }
+
+  &--no-padding {
+    padding: 0;
+  }
+}
+
+// --- Scroll-reveal effect ------------------------------------------------
+// Ported from legacy client/styles/base/_reveal-on-scroll.scss. Toggled by
+// the useRevealOnScroll hook on About/Projects/Skills/Contact/ScrollUpBtn.
+.reveal-item {
+  opacity: 0;
+  transform: scale(1.15);
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+
+  &--is-visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+// --- Component partials ---------------------------------------------------
+@import './components/header';
+@import './components/carousel';
+@import './components/about';
+@import './components/projects';
+@import './components/skills';
+@import './components/contact';
+@import './components/resume-modal';
+@import './components/scroll-up-btn';

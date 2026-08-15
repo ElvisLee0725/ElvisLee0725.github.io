@@ -1,0 +1,12 @@
+// Ported from legacy client/styles/components/_menu.scss — header-nav part
+// only (carousel-caption/typewriter rules moved to _carousel.scss).
+.menu-bg {
+  background-color: fade-out($theme-red, 0.05);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+
+  &--show {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+  }
+}

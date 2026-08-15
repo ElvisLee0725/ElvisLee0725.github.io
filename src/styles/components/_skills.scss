@@ -1,0 +1,24 @@
+// Ported as-is from legacy client/styles/components/_skills.scss
+// (progress-bar rules that belonged to the deleted HireMe component were
+// dropped — see client/styles/components/_hire-me.scss in the legacy repo).
+.long-padding {
+  padding-top: 3rem;
+  padding-bottom: 14rem;
+}
+
+.card-margin {
+  margin-top: -14rem;
+}
+
+.tech-icon {
+  font-size: 4rem;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 812px) {
+  .tech-icon {
+    font-size: 3rem;
+  }
+  .card-body h6 {
+    font-size: 0.65rem;
+  }
+}

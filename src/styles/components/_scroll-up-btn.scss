@@ -1,0 +1,24 @@
+// Ported as-is from legacy client/styles/components/_scroll-up-btn.scss.
+// Not enumerated in the architecture doc's illustrative file list, but
+// added to fully mirror "one partial per component, as legacy had" for
+// the ScrollUpBtn component that does have its own src/components folder.
+.scroll-up-btn {
+  position: fixed;
+  z-index: 1;
+  right: $xl-size;
+  bottom: $xxl-size;
+
+  .btn {
+    display: block;
+    height: 50px;
+    width: 50px;
+    color: $offWhite;
+    background-color: $theme-red;
+    transition: all 0.5s;
+  }
+
+  .btn:hover {
+    background-color: $offWhite;
+    color: $theme-red;
+  }
+}

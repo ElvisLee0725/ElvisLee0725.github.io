@@ -1,0 +1,33 @@
+// Ported as-is from legacy client/styles/components/_about.scss
+.about {
+  &__photo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-bottom: 60px;
+
+    img {
+      transition: all 0.3s;
+    }
+
+    img:hover {
+      transform: scale(1.25);
+    }
+  }
+}
+
+.btn--download {
+  color: $offWhite;
+  border-color: $theme-red;
+  background-color: $theme-red;
+}
+
+.btn--download:hover {
+  color: $theme-red;
+  border-color: $offWhite;
+  background-color: $offWhite;
+}

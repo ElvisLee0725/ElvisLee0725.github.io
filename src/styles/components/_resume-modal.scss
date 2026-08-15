@@ -1,0 +1,54 @@
+// Ported as-is from legacy client/styles/components/_resume-modal.scss
+.resume-modal {
+  position: fixed;
+  z-index: 1031; // Bootstrap menu z-index is 1030
+  background-color: rgba(255, 255, 255, 0.95);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.2);
+  transition: all 0.3s ease-out;
+
+  div {
+    font-size: $s-size;
+  }
+
+  &__container {
+    padding: $l-size $xl-size;
+  }
+
+  &--is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    overflow-y: scroll;
+  }
+
+  &__close {
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    font-size: $m-size;
+    transform: scaleX(1.2);
+    transform-origin: 100% 0;
+    color: $mainDarkGrey;
+    cursor: pointer;
+
+    &:hover {
+      color: $theme-red;
+    }
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    &__container {
+      padding: $xxl-size;
+    }
+  }
+}
+
+.body-no-scroll {
+  overflow: hidden;
+}

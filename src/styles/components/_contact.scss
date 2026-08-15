@@ -1,0 +1,77 @@
+// Ported from legacy client/styles/components/_contact.scss, adapted for
+// the mailto ContactCta (Milestone 3) in place of the old <form>, with the
+// background image now a local committed asset instead of the S3 hotlink.
+// Footer rules (legacy client/styles/components/_footer.scss) folded in
+// here since Footer.jsx is co-located under src/components/Contact/.
+.contact-bg {
+  background: url('/assets/images/contact-bg.jpg');
+  background-size: cover;
+  color: $offWhite;
+}
+
+.contact-cta-btn {
+  display: inline-block;
+}
+
+.btn {
+  margin: 0 5px;
+  border-radius: 0;
+}
+
+.contactBtn {
+  padding: 0.25rem 2rem;
+}
+
+.btn-outline-theme-red {
+  color: $offWhite;
+  border-color: $offWhite;
+}
+
+.btn-outline-theme-red:hover {
+  color: $offWhite;
+  border-color: $theme-red;
+  background-color: $theme-red;
+}
+
+.contact-icons {
+  i {
+    padding: 0px 1rem;
+    color: $offWhite;
+    font-size: $l-size;
+    transition: all 0.3s;
+  }
+
+  .fa-twitter:hover {
+    color: $twitter;
+  }
+
+  .fa-facebook-square:hover {
+    color: $facebook;
+  }
+
+  .fa-github:hover {
+    color: $github;
+  }
+
+  .fa-linkedin:hover {
+    color: $linkedIn;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .contact-icons {
+    i {
+      font-size: $xxl-size;
+    }
+  }
+}
+
+.footer {
+  font-size: $xs-size;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .footer {
+    font-size: $s-size;
+  }
+}
