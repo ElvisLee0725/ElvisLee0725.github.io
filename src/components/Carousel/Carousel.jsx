@@ -22,33 +22,10 @@ function Carousel() {
                 data-slide-to="0"
                 className="active"
               ></li>
-              <li data-target="#elvisCarousel" data-slide-to="1"></li>
             </ol>
 
             <div className="carousel-inner" role="listbox">
               <div className="carousel-item active">
-                <picture>
-                  <source
-                    srcSet="/assets/images/carousel/cover-xl.jpg"
-                    media="(min-width: 1380px)"
-                  />
-                  <source
-                    srcSet="/assets/images/carousel/cover-lg.jpg"
-                    media="(min-width: 990px)"
-                  />
-                  <source
-                    srcSet="/assets/images/carousel/cover-md.jpg"
-                    media="(min-width: 640px)"
-                  />
-                  <img
-                    src="/assets/images/carousel/cover-sm.jpg"
-                    className="d-block w-100"
-                    alt="Elvis Lee Site Cover"
-                  />
-                </picture>
-              </div>
-
-              <div className="carousel-item">
                 <picture>
                   <source
                     srcSet="/assets/images/carousel/coding-cover-xl.jpg"
