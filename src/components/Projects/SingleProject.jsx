@@ -7,7 +7,7 @@ function SingleProject({
 
   return (
     <div className="col-12 col-md-6 portfolio-box" ref={boxRef}>
-      <img src={img} className="img-fluid" alt={imgAlt} />
+      <img src={img} className="img-fluid w-100" alt={imgAlt} />
       <div className="portfolio-box__overlay portfolio-box__overlay--bgDarkGrey">
         <div className="portfolio-box__caption px-3">
           <h4>{title}</h4>
