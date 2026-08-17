@@ -15,16 +15,34 @@ function About() {
             </div>
             <div>
               <p>
-                Originally from Taipei, Taiwan, Elvis (Po Yi) Lee is working
-                conscientiously to become a web developer. Yes, I am a fan of
-                Elvis Presley and Rock 'n' Roll, and I do coding as well. I live
-                in Irvine, California currently, and I'm interested in web
-                technologies and very excited about being a web developer in the
-                United States. Besides studying algorithm coding questions and developing
-                my own website for experiment, I am also using new
-                technologies such as Node.js, Express, React, Redux and MongoDB. I'm
-                looking forward to entering this amazing industry and
-                contributing my skills to create useful apps for everyone.
+                When I’m not developing complex distributed systems to process
+                data on millions real estate listing, you’ll probably find me
+                slamming my guitar or trying (and failing) to perfect my latte
+                art. I’m a software engineer who believes that both good code
+                and good coffee require patience, practice, and creativity.
+              </p>
+              <p>
+                I’m a backend software engineer with over nine years of
+                experience, building scalable, high-performance APIs and
+                data-driven systems using Java and Spring Boot. I have worked
+                across frontend and backend for companies of various sizes —
+                from agile startups where I wore many hats to large
+                enterprises where precision and reliability were key.
+              </p>
+              <p>
+                Over time, I’ve developed a strong focus on API design, data
+                integration, and automation, with hands-on experience in
+                cloud environments (GCP, Kubernetes) and CI/CD using Jenkins.
+                I enjoy taking ownership of projects end to end — from design
+                and implementation to monitoring and optimization — and
+                finding ways to improve both the codebase and the developer
+                experience.
+              </p>
+              <p>
+                Beyond the code, I’m passionate about learning across
+                disciplines — the “wannabe generalist” mindset — whether that
+                means exploring DevOps, experimenting with AI tools, or
+                simply understanding how different systems fit together.
               </p>
               <DownloadCvButton />
             </div>
