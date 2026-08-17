@@ -12,7 +12,7 @@ function Carousel() {
         <div className="row">
           <div
             id="elvisCarousel"
-            className="carousel slide"
+            className="carousel slide w-100"
             data-ride="carousel"
             data-interval="3000"
           >
