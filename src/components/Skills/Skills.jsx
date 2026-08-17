@@ -20,7 +20,7 @@ const FrameworkIcons = [
 ];
 
 const DevToolIcons = [
-  { devicon: 'devicon-amazonwebservices-original', title: 'AWS' },
+  { devicon: 'devicon-amazonwebservices-plain', title: 'AWS' },
   { devicon: 'devicon-mysql-plain-wordmark', title: 'MySQL' },
   { devicon: 'devicon-git-plain', title: 'Git' },
   { devicon: 'devicon-postgresql-plain', title: 'postgreSQL' },
