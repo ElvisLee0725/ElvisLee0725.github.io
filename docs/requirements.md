@@ -96,6 +96,15 @@ Pick and wire up an actual contact-form service to replace the Milestone 3 `mail
 - Whatever is chosen replaces the Milestone 3 CTA cleanly, with no leftover legacy form code to strip (there won't be any, since Milestone 3 already removed it).
 - Explicitly **not** a v1 requirement — the site is considered fully launched and successful without this milestone being done.
 
+### 8. Resume refresh: swap in updated CV (post-v1, ongoing maintenance)
+Replace `public/assets/cv.pdf` with the newer resume version Elvis provides, whenever he has an updated one to swap in.
+
+**Acceptance criteria:**
+- New PDF is committed at `public/assets/cv.pdf`, replacing the current file in place (filename/path stays stable, so `DownloadCvButton.jsx` and `ResumeModal.jsx` need no code changes — this is a data-only swap, per Milestone 2's design).
+- `npm run build` produces `dist/assets/cv.pdf` matching the new file (byte-for-byte, not stale/cached).
+- Manual check: Download CV from both the About section and the Resume modal, confirm it opens/downloads the new version.
+- Not a v1 blocker — this is a recurring maintenance task, triggered whenever Elvis has a newer resume to publish, not a one-time migration step.
+
 ## Risks
 
 - **DNS cutover window**: propagation (up to 24h) and cert issuance (up to another 24h) can stack, and the old EC2 `A` record must be fully removed, not just supplemented, or cert issuance can be blocked outright. Mitigated by doing this last, as its own milestone, with Milestone 5 verification complete first.
