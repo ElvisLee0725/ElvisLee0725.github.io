@@ -29,21 +29,6 @@ function About() {
                 from agile startups where I wore many hats to large
                 enterprises where precision and reliability were key.
               </p>
-              <p>
-                Over time, I’ve developed a strong focus on API design, data
-                integration, and automation, with hands-on experience in
-                cloud environments (GCP, Kubernetes) and CI/CD using Jenkins.
-                I enjoy taking ownership of projects end to end — from design
-                and implementation to monitoring and optimization — and
-                finding ways to improve both the codebase and the developer
-                experience.
-              </p>
-              <p>
-                Beyond the code, I’m passionate about learning across
-                disciplines — the “wannabe generalist” mindset — whether that
-                means exploring DevOps, experimenting with AI tools, or
-                simply understanding how different systems fit together.
-              </p>
               <DownloadCvButton />
             </div>
           </div>

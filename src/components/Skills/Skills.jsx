@@ -39,14 +39,19 @@ function Skills() {
           <div className="row">
             <div className="col-10 offset-1 py-4">
               <p>
-                I am capable of building a website that meets your needs. From small
-                scale websites with a built-in CMS such as WordPress, to large
-                scale websites that require a development team with both
-                front-end and back-end engineers working together. With version
-                control tool experience like github / bitbucket, and knowledge
-                from my MS Computer Science degree, I am ready to work with
-                other experienced developers since I care not only to get things to work,
-                 but also work efficiently with high performance!
+                Over time, I’ve developed a strong focus on API design, data
+                integration, and automation, with hands-on experience in
+                cloud environments (GCP, Kubernetes) and CI/CD using Jenkins.
+                I enjoy taking ownership of projects end to end — from design
+                and implementation to monitoring and optimization — and
+                finding ways to improve both the codebase and the developer
+                experience.
+              </p>
+              <p>
+                Beyond the code, I’m passionate about learning across
+                disciplines — the “wannabe generalist” mindset — whether that
+                means exploring DevOps, experimenting with AI tools, or
+                simply understanding how different systems fit together.
               </p>
             </div>
           </div>
