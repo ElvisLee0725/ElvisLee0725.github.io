@@ -16,9 +16,11 @@ export default function useRevealOnScroll(threshold = 75) {
     function calculate() {
       if (revealedRef.current) return;
       const browserHeight = window.innerHeight;
+      const atBottom =
+        window.scrollY + browserHeight >= document.documentElement.scrollHeight - 1;
       if (window.scrollY + browserHeight > el.offsetTop) {
         const percentScroll = (el.getBoundingClientRect().top / browserHeight) * 100;
-        if (percentScroll < threshold) {
+        if (percentScroll < threshold || atBottom) {
           el.classList.add('reveal-item--is-visible');
           revealedRef.current = true;
           window.removeEventListener('scroll', onScroll);
