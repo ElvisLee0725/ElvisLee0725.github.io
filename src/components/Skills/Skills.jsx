@@ -4,28 +4,28 @@ import useRevealOnScroll from '../../hooks/useRevealOnScroll.js';
 const LanguageIcons = [
   { devicon: 'devicon-javascript-plain', title: 'JavaScript' },
   { devicon: 'devicon-java-plain', title: 'Java' },
-  { devicon: 'devicon-html5-plain-wordmark', title: 'HTML5' },
-  { devicon: 'devicon-css3-plain-wordmark', title: 'CSS3' },
+  { devicon: 'devicon-redis-plain', title: 'Redis' },
+  { devicon: 'devicon-elasticsearch-plain', title: 'Elasticsearch' },
   { devicon: 'devicon-python-plain', title: 'Python' },
-  { devicon: 'devicon-php-plain', title: 'PHP' },
+  { devicon: 'devicon-postgresql-plain-wordmark', title: 'postgreSQL' },
 ];
 
 const FrameworkIcons = [
   { devicon: 'devicon-react-original', title: 'React.js' },
   { devicon: 'devicon-nodejs-plain', title: 'Node.js' },
-  { devicon: 'devicon-express-original', title: 'Express' },
-  { devicon: 'devicon-webpack-plain', title: 'Webpack' },
-  { devicon: 'devicon-jquery-plain', title: 'jQuery' },
-  { devicon: 'devicon-bootstrap-plain', title: 'Bootstrap' },
+  { devicon: 'devicon-spring-original', title: 'Spring' },
+  { devicon: 'devicon-fastapi-plain', title: 'FastAPI' },
+  { devicon: 'devicon-apachekafka-original', title: 'Apache Kafka' },
+  { devicon: 'devicon-redux-original', title: 'Redux' },
 ];
 
 const DevToolIcons = [
   { devicon: 'devicon-amazonwebservices-plain', title: 'AWS' },
-  { devicon: 'devicon-mysql-plain-wordmark', title: 'MySQL' },
-  { devicon: 'devicon-git-plain', title: 'Git' },
-  { devicon: 'devicon-postgresql-plain', title: 'postgreSQL' },
-  { devicon: 'devicon-mongodb-plain', title: 'MongoDB' },
-  { devicon: 'devicon-heroku-plain', title: 'Heroku' },
+  { devicon: 'devicon-googlecloud-plain', title: 'Google Cloud' },
+  { devicon: 'devicon-docker-plain', title: 'Docker' },
+  { devicon: 'devicon-kubernetes-plain', title: 'Kubernetes' },
+  { devicon: 'devicon-jenkins-plain', title: 'Jenkins' },
+  { devicon: 'devicon-vault-original', title: 'Vault' },
 ];
 
 function Skills() {
@@ -62,7 +62,7 @@ function Skills() {
           <div className="card-group card-margin" ref={cardGroupRef}>
             <div className="card">
               <div className="card-body">
-                <h5 className="card-title font-weight-bold">Languages</h5>
+                <h5 className="card-title font-weight-bold">Languages &amp; DB</h5>
                 <div className="row">
                   {LanguageIcons.map((icon) => (
                     <SingleIcon key={icon.title} data={icon} />
@@ -82,7 +82,7 @@ function Skills() {
             </div>
             <div className="card">
               <div className="card-body">
-                <h5 className="card-title font-weight-bold">Dev Tools</h5>
+                <h5 className="card-title font-weight-bold">Cloud &amp; DevOps</h5>
                 <div className="row">
                   {DevToolIcons.map((icon) => (
                     <SingleIcon key={icon.title} data={icon} />

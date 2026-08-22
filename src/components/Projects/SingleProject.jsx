@@ -25,6 +25,7 @@ function SingleProject({
             >
               <i className="fas fa-code fa-fw fa-2x mx-3"></i>
             </a>
+            {/* Live Demo link disabled — the hosted demos no longer exist
             <a
               href={url}
               target="_blank"
@@ -36,6 +37,7 @@ function SingleProject({
             >
               <i className="fas fa-desktop fa-fw fa-2x mx-3"></i>
             </a>
+            */}
           </div>
         </div>
       </div>
